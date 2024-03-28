@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Shop</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="loader__container">
+                <div id="loader" class="loader"></div>
+            </div>
+            <div class="message-error" data-message>
+            </div>
+            <template data-cardTemplate>
+                <section>
+                    <div class="card">
+                        <div class="card__container-img">
+                            <img src="" alt="photo of the product" class="card__img" data-img>
+                        </div>
+                        <h2 class="card__title" data-titleProduct></h2>
+                        <div class="card__description" data-cardDescription>
+                            <p class="description__text main-text" data-description></p>
+                            <button class="description__btn">Read more</button>
+                        </div>
+                        <span class="card__label" data-label></span>
+                        <div class="card__buy">
+                            <div class="card__price">
+                                <span class="main-text">Price</span>
+                                <span data-cost></span>
+                            </div>
+                            <button class="card__btn">
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </template>
+            <div class="card__container" data-cardContainer></div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
