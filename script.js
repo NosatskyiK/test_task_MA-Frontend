@@ -54,7 +54,6 @@ function createCard(data) {
 
 receivingData();
 
-
 document.addEventListener("DOMContentLoaded", function() {
     function btnClickHandler(element) {
         const descriptionText = element.closest('.card__description').querySelector('[data-description]');
