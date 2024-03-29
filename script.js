@@ -71,8 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
     cardContainer.addEventListener('click', (event) => {
         if (event.target.classList.contains('description__btn')) {
             btnClickHandler(event.target)
-        } else {
-            console.log('error');
         }
     })
 });
